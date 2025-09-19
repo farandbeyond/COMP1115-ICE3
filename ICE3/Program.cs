@@ -14,7 +14,19 @@
             string Career = "";
             bool HasChosenCareer = false;
 
+            //setup career selection
+            //prompt user for the character name
+            Console.WriteLine("What is your Name?");
+            CharacterName = Console.ReadLine();
 
+            Console.WriteLine("Now, choose your Career:");
+            Console.WriteLine("1: Army");
+            Console.WriteLine("2: Psion");
+            Console.WriteLine("3: Telepath");
+            Console.WriteLine("4: Rogue");
+            Console.WriteLine("5: Tinker");
+
+            Console.ReadKey(true);
 
         }
     }
