@@ -30,10 +30,6 @@
             int careerChoice = Convert.ToInt32(Console.ReadLine());
             switch (careerChoice)
             {
-
-
-                //if(careerChoice == 1)
-                //{
                 case 1:
                     Career = "Army";
 
@@ -46,8 +42,6 @@
 
                     HasChosenCareer = true;
                     break;
-                //}else if(careerChoice == 2)
-                //{
                 case 2:
                     Career = "Psion";
 
@@ -60,8 +54,6 @@
 
                     HasChosenCareer = true;
                     break;
-                //}else if(careerChoice == 3)
-                //{
                 case 3:
                     Career = "Telepath";
 
@@ -74,8 +66,6 @@
 
                     HasChosenCareer = true;
                     break;
-                //}else if(careerChoice == 4)
-                //{
                 case 4:
                     Career = "Rogue";
 
@@ -88,8 +78,6 @@
 
                     HasChosenCareer = true;
                     break;
-                //}else if(careerChoice == 5)
-                //{
                 case 5:
                     Career = "Tinker";
 
@@ -103,13 +91,10 @@
                     HasChosenCareer = true;
                     break;
                 default:
-                //}else
-                //{
                     //if users choice is invalid, tell them
                     Console.WriteLine("That is not a valid job option.");
                     Console.ReadKey(true);
                     break;
-                //}
             }
             //ensure that HasChosenCareer is true
             if (!HasChosenCareer) return;
