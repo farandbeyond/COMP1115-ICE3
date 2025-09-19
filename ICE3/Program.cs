@@ -96,12 +96,12 @@
 
                     Random rand = new Random();
 
-                    Agility = rand.Next(1, 10) + rand.Next(1, 10) + rand.Next(1, 10) + rand.Next(1, 10) + rand.Next(1, 10);
-                    Strength = rand.Next(1, 10) + rand.Next(1, 10) + rand.Next(1, 10) + rand.Next(1, 10) + rand.Next(1, 10);
-                    Vigour = rand.Next(1, 10) + rand.Next(1, 10) + rand.Next(1, 10) + rand.Next(1, 10) + rand.Next(1, 10);
-                    Perception = rand.Next(1, 10) + rand.Next(1, 10) + rand.Next(1, 10) + rand.Next(1, 10) + rand.Next(1, 10);
-                    Intellect = rand.Next(1, 10) + rand.Next(1, 10) + rand.Next(1, 10) + rand.Next(1, 10) + rand.Next(1, 10);
-                    Will = rand.Next(1, 10) + rand.Next(1, 10) + rand.Next(1, 10) + rand.Next(1, 10) + rand.Next(1, 10);
+                    Agility = rand.Next(1, 11) + rand.Next(1, 11) + rand.Next(1, 11) + rand.Next(1, 11) + rand.Next(1, 11);
+                    Strength = rand.Next(1, 11) + rand.Next(1, 11) + rand.Next(1, 11) + rand.Next(1, 11) + rand.Next(1, 11);
+                    Vigour = rand.Next(1, 11) + rand.Next(1, 11) + rand.Next(1, 11) + rand.Next(1, 11) + rand.Next(1, 11);
+                    Perception = rand.Next(1, 11) + rand.Next(1, 11) + rand.Next(1, 11) + rand.Next(1, 11) + rand.Next(1, 11);
+                    Intellect = rand.Next(1, 11) + rand.Next(1, 11) + rand.Next(1, 11) + rand.Next(1, 11) + rand.Next(1, 11);
+                    Will = rand.Next(1, 11) + rand.Next(1, 11) + rand.Next(1, 11) + rand.Next(1, 11) + rand.Next(1, 11);
 
                     HasChosenCareer = true;
                     break;
