@@ -96,13 +96,40 @@
             {
                 //if users choice is invalid, tell them
                 Console.WriteLine("That is not a valid job option.");
+                Console.ReadKey(true);
             }
 
+            //ensure that HasChosenCareer is true
+            if (!HasChosenCareer) return;
+            
             //determine secondary attributes
             Awareness = Agility + Perception;
             Toughness = Strength + Vigour;
             Resolve = Intellect + Will;
 
+
+            //    Use Console.Clear() before displaying.
+            //Change Console.ForegroundColor and/ or Console.BackgroundColor.
+            Console.Clear();
+            Console.BackgroundColor = ConsoleColor.Gray;
+            Console.ForegroundColor = ConsoleColor.DarkBlue;
+            Console.Title = $"Character Sheet: {CharacterName}";
+
+            //Display nicely formatted output(extra \n or multiple Console.WriteLine).
+            //Create ASCII dividers(dashed lines) to separate the CharacterName, Primary Attributes and Secondary Attributes.
+            Console.WriteLine($"{CharacterName}");
+            Console.WriteLine($"Career: {Career}");
+            Console.WriteLine("---------------------------");
+            Console.WriteLine("Strength: {0,2:D2} | Intellect:  {1,2:D2}", Strength, Intellect);
+            Console.WriteLine("Agility:  {0,2:D2} | Perception: {1,2:D2}", Agility, Perception);
+            Console.WriteLine("Vigour:   {0,2:D2} | Will:       {1,2:D2}", Vigour, Will);
+            Console.WriteLine("---------------------------");
+            Console.WriteLine($"AWARENESS: {Awareness}");
+            Console.WriteLine($"TOUGHNESS: {Toughness}");
+            Console.WriteLine($"RESOLVE:   {Resolve}");
+            Console.WriteLine("---------------------------");
+            //and hold on this screen until the user is done
+            Console.WriteLine("Press any key to continue...");
             Console.ReadKey(true);
 
         }
