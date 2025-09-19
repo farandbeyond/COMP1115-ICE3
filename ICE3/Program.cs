@@ -25,6 +25,7 @@
             Console.WriteLine("3: Telepath");
             Console.WriteLine("4: Rogue");
             Console.WriteLine("5: Tinker");
+            Console.WriteLine("6: Random");
 
             //take the users input and choose their job
             int careerChoice = Convert.ToInt32(Console.ReadLine());
@@ -87,6 +88,20 @@
                     Perception = 5;
                     Intellect = 50;
                     Will = 20;
+
+                    HasChosenCareer = true;
+                    break;
+                case 6:
+                    Career = "Gambler";
+
+                    Random rand = new Random();
+
+                    Agility = rand.Next(1, 10) + rand.Next(1, 10) + rand.Next(1, 10) + rand.Next(1, 10) + rand.Next(1, 10);
+                    Strength = rand.Next(1, 10) + rand.Next(1, 10) + rand.Next(1, 10) + rand.Next(1, 10) + rand.Next(1, 10);
+                    Vigour = rand.Next(1, 10) + rand.Next(1, 10) + rand.Next(1, 10) + rand.Next(1, 10) + rand.Next(1, 10);
+                    Perception = rand.Next(1, 10) + rand.Next(1, 10) + rand.Next(1, 10) + rand.Next(1, 10) + rand.Next(1, 10);
+                    Intellect = rand.Next(1, 10) + rand.Next(1, 10) + rand.Next(1, 10) + rand.Next(1, 10) + rand.Next(1, 10);
+                    Will = rand.Next(1, 10) + rand.Next(1, 10) + rand.Next(1, 10) + rand.Next(1, 10) + rand.Next(1, 10);
 
                     HasChosenCareer = true;
                     break;
